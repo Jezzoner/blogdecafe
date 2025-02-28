@@ -22,6 +22,9 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+.bold {
+    font-weight: 700;
+}
 a {
     text-decoration: none;
 }
@@ -98,4 +101,12 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: white;
+}
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    
 }
