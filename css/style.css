@@ -143,6 +143,7 @@ img {
 }
 .boton--secundario {
     background-color: var(--primario);
+    font-size: 1.6rem;
 }
 .torticas {
     list-style: none;
