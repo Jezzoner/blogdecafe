@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tortas Ana Maria</title>
     <meta name="description" content="Tortas Ana Maria, pasteles y mini cakes en Cuenca, Ecuador.">
-    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="prefetch" href="nosotros.html" as="document">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     
@@ -39,7 +47,11 @@
             <h3>Nuestras Deliciosas Tortas</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/torta1.jpg" alt="Torta Amore Flor">
+                    <picture>
+                        <source loading="lazy" srcset="img/torta1.webp" type="image/webp">
+                        <img loading="lazy" src="img/torta1.jpg" alt="Torta Amore Flor">
+                    </picture>
+                
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Amore Flor</h4>
@@ -50,7 +62,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/torta2.jpg" alt="Torta Dulce Tentacion">
+                    <picture>
+                        <source loading="lazy" srcset="img/torta2.webp" type="image/webp">
+                        <img loading="lazy" src="img/torta2.jpg" alt="Torta Dulce Tentacion">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Dulce Tentacion</h4>
@@ -61,7 +76,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/torta3.jpg" alt="Torta Corazón">
+                    <picture>
+                        <source loading="lazy" srcset="img/torta3.webp" type="image/webp">
+                        <img loading="lazy" src="img/torta3.jpg" alt="Torta Corazón">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Corazón</h4>
@@ -72,7 +90,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/torta4.jpg" alt="Torta Butterfly">
+                    <picture>
+                        <source loading="lazy" srcset="img/torta4.webp" type="image/webp">
+                        <img loading="lazy" src="img/torta4.jpg" alt="Torta Butterfly">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Butterfly</h4>
@@ -83,7 +104,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/torta5.jpg" alt="Torta Tentacion Pura">
+                    <picture>
+                        <source loading="lazy" srcset="img/torta5.webp" type="image/webp">
+                        <img loading="lazy" src="img/torta5.jpg" alt="Torta Tentacion Pura">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tentacion Pura</h4>
@@ -219,5 +243,6 @@
 
         </div>
     </footer>
+    <script src="js/modernizr.js"></script>
 </body>
 </html>
