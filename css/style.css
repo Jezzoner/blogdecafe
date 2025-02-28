@@ -58,7 +58,7 @@ img {
     text-align: center;
 }
 .header {
-    background-image: url('../img/banner2.jpg');
+    background-image: url('../img/banner.jpg');
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -170,4 +170,12 @@ img {
     background-color: black;
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
